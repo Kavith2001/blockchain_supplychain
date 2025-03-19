@@ -41,6 +41,7 @@ contract Tracking {
         shipmentCount = 0;
     }
 
+//shipment creation 
      function createShipment(address _receiver, uint256 _pickupTime, uint256 _distance, uint256 _price) public payable {
         require(msg.value == _price, "Payment amount must match the price.");
         
