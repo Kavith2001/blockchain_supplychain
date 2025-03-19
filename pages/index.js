@@ -43,6 +43,11 @@ const index = () => {
 
   return (
     <>
+      
+      <Table
+        setCreateShipmentModel={setCreateShipmentModel}
+        allShipmentsdata={allShipmentsdata}
+      />
       <Services
         setOpenProfile={setOpenProfile}
         setCompleteModal={setCompleteModal}
@@ -50,10 +55,7 @@ const index = () => {
         setStartModal={setStartModal}
       />
 
-      <Table
-        setCreateShipmentModel={setCreateShipmentModel}
-        allShipmentsdata={allShipmentsdata}
-      />
+
       <Form
         createShipmentModel={createShipmentModel}
         createShipment={createShipment}
